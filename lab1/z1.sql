@@ -6,7 +6,6 @@ CREATE TABLE public.Czytelnicy (
                 CONSTRAINT czytelnicy_pk PRIMARY KEY (Czytelnik_id)
 );
 
-
 CREATE TABLE public.Ksiazki (
                 Ksiazki_id INTEGER NOT NULL,
                 Autorzy_id INTEGER NOT NULL,
@@ -14,7 +13,6 @@ CREATE TABLE public.Ksiazki (
                 ISBN INTEGER NOT NULL,
                 CONSTRAINT ksiazki_pk PRIMARY KEY (Ksiazki_id)
 );
-
 
 CREATE TABLE public.Ksiazki_Czytelnicy (
                 Ksiazki_Czytelnicy_id INTEGER NOT NULL,
@@ -25,14 +23,12 @@ CREATE TABLE public.Ksiazki_Czytelnicy (
                 CONSTRAINT ksiazki_czytelnicy_pk PRIMARY KEY (Ksiazki_Czytelnicy_id)
 );
 
-
 CREATE TABLE public.Autorzy (
                 Autorzy_id INTEGER NOT NULL,
                 Imie VARCHAR NOT NULL,
                 Nazwisko VARCHAR NOT NULL,
                 CONSTRAINT autorzy_pk PRIMARY KEY (Autorzy_id)
 );
-
 
 ALTER TABLE public.Ksiazki_Czytelnicy ADD CONSTRAINT ksiazki_czytelnicy_czytelnicy_fk
 FOREIGN KEY (Czytelnik_id)
