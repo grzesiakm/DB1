@@ -1,0 +1,28 @@
+Zadanie
+Proszę przygotować projekt struktury bazy danych w postaci diagramu ERD dla następujących
+założeń:
+1. Baza zawiera 3 tabele
+a. Tabela Ksiazki
+i. Pole Ksiazka_id – autonumerowany klucz główny tabeli
+ii. Pole Autor_id – klucz obcy tabeli Autorzy (tworzony automatycznie podczas
+definiowania relacji)
+iii. Pole Tytuł – typu varchar
+iv. Pole ISBN
+b. Tabela Autorzy
+i. Pole Autor_id – autonumerowany klucz główny tabeli
+ii. Imie – varchar
+iii. Nazwisko – varchar
+c. Tabela Czytelnicy
+i. Pole czytelnik_id – autonumerowany klucz główny tabeli
+ii. Imie – varchar
+iii. Nazwisko – varchar
+iv. Aktywny – boolean
+2. Relacje między tabelami
+a. Relacja 1:N między tabelami Ksiazki i Autorzy – ustalamy możliwość zdefiniowania
+tylko 1 autora dla każdej książki.
+b. Relacja N:M między tabelami Ksiazki oraz Czytelnicy – tabela zostanie stworzona
+automatycznie podczas definiowania relacji.
+c. Dodatkowo w tabeli pośredniczącej dla relacji N:M dodefiniowujemy następujęce
+pola:
+i. Pole data_wypozyczenia – pole typu timestamp
+ii. Pole data-zwrotu – pole typu timestamp

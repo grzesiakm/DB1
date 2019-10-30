@@ -1,0 +1,22 @@
+1. Wyświetlić nazwiska i nazwy departamentów wszystkich pracowników w kolejności
+alfabetycznej.
+2. Wyświetl nazwiska pracowników zatrudnionych w Dallas
+3. Wyświetl nazwiska i pensje pracowników oraz ich klasę zaszeregowania
+4. Wybierz nazwiska, pensje i klasę zaszeregowania. Pracowników(emp) których zarobki
+odpowiadają klasie 3
+5. Wyświetl nazwiska i pensje pracowników którzy zarabiają mniej od swoich kierowników
+6. Wyświetl stanowiska występujące w działach 10 i 30
+7. Oblicz średni zarobek w firmie
+8. Znajdź minimalne zarobki na stanowisku CLERK
+9. Ilu pracowników zatrudniono w departamencie 20
+10.Jakie są średnie zarobki na każdym stanowisku pracy
+11.Jakie są maksymalne zarobki dla każdego stanowiska
+12.Wyświetlić średnie zarobki dla departamentów zatrudniających powyżej 3 pracowników
+13.Jaka jest różnica między najwyższą i najniższą pensją?
+14.Ilu podwładnych ma każdy kierownik?
+15.Jaka jest średnia pensja w każdej klasie zarobkowej?
+16.Ilu pracowników jest w każdej klasie zarobkowej?
+17. Znaleźć pracowników z pensją równą minimalnej pensji w firmie
+18.Wyświetlić nazwy działów w których pracują urzędnicy (CLERK)
+19.Którzy pracownicy zarabiają powyżej średniej w swoich departamentach?
+20. Znaleźć departamenty w których nie ma pracowników. 

@@ -1,0 +1,24 @@
+1. Wypisać osoby, które zarabiają najwięcej ze wszystkich pracowników.
+2. Wypisać pracowników, którzy pracują na tym samym stanowisku co pracownik o numerze 7369 i
+których zarobki są większe niż zarobki pracownika o numerze 7876.
+3. Wypisać działy, w których pracują urzędnicy (CLERK)
+4. Dla każdego działu wypisać osobę, która zarabia najwięcej w tym dziale.
+5. Wypisać działy, w których aktualnie nie ma zatrudnionych pracowników.
+6. Wypisać wszystkich pracowników podając dla każdego z nich nazwę działu, w którym pracuje.
+7. Wypisać wszystkie działy dla każdego z nich podając sumaryczne zarobki zatrudnionych w nim
+pracowników.
+8. Wypisać nazwiska pracowników z nazwami departamentów, w których są zatrudnieni podając
+również pracowników, którzy nie zostali przypisani do żadnego departamentu a także nazwy
+departamentów, w których nie ma zatrudnionych pracowników
+9. Wybrać nazwiska pracowników, których zarobki są w tej samej klasie zaszeregowania co zarobki ich
+kierowników. Obok nazwiska pracownika zamieścić nazwisko jego kierownika i klasę
+zaszeregowania zarobków tego kierownika.
+10. Wybrać nazwiska pracowników, którzy pracują w tych samych działach co ich kierownicy. Obok
+nazwiska pracownika zamieścić nazwisko jego kierownika i nazwę działu.
+11. Wyznaczyć stanowiska (bez powtórzeń), na których nikt nie dostał prowizji.
+12. Ustawić w pary pracowników, którzy mają tego samego kierownika. Nazwiska w parze powinny być
+różne i pary nie powinny się powtarzać.
+13. Wybrać kierowników (pracowników pracujących na stanowisku MANAGER), którzy mają dokładnie
+jednego podwładnego. Podać, gdzie oni pracują i w jakiej klasie zaszeregowania są ich zarobki.
+14. Znaleźć nazwę działu, w którym pracownicy zarabiają średnio najwięcej oraz nazwę działu, w
+którym pracownicy zarabiają średnio najmniej. 

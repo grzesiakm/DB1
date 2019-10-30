@@ -1,0 +1,13 @@
+1. Wyświetlić numery departamentów, nazwiska pracowników oraz numery
+pracownicze ich szefów z tabeli emp.
+2. Wyliczyć roczną pensję podstawową dla każdego pracownika, jeżeli każdy
+dostanie podwyżkę o 250
+3. Wyświetlić wszystkie różne numery departamentów z tabeli emp.
+4. Wyświetlić wszystkie dane o pracownikach pracujących na stanowisku CLERK.
+5. Wyświetlić dane pracowników, których prowizja przekracza pensję.
+6. Wyświetlić dane pracowników, których pensja mieści się pomiędzy 1000 a
+2000.
+7. Wyświetlić dane pracowników o nazwiskach na literę 'S'.
+8. Wyświetlić dane pracowników, których nazwiska są czteroliterowe.
+9. Wyświetlić dane pracowników, którzy nie posiadają szefa.
+10. Wyświetlić dane pracowników, których nazwiska nie zaczynają się od litery M. 
