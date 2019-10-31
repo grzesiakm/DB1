@@ -1,4 +1,12 @@
-CREATE TABLE  emp2 (empno NUMERIC(4,0) PRIMARY KEY, ename VARCHAR(10), job VARCHAR(9), mgr NUMERIC(4,0), hiredate DATE, sal NUMERIC(7,2), comm NUMERIC(7,2), deptno NUMERIC(2,0));
+CREATE TABLE  emp2 (empno NUMERIC(4,0) PRIMARY KEY, 
+                    ename VARCHAR(10), 
+                    job VARCHAR(9), 
+                    mgr NUMERIC(4,0), 
+                    hiredate DATE, 
+                    sal NUMERIC(7,2), 
+                    comm NUMERIC(7,2), 
+                    deptno NUMERIC(2,0)
+                    );
 INSERT INTO EMP2 VALUES(7369,'SMITH','CLERK',7902,'17-12-1980',800,NULL,20);
 INSERT INTO EMP2 VALUES(7499,'ALLEN','SALESMAN',7698,'20-2-1981',1600,300,30);
 INSERT INTO EMP2 VALUES(7521,'WARD','SALESMAN',7698,'22-2-1981',1250,500,30);
