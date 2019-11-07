@@ -1,0 +1,146 @@
+CREATE TABLE  emp2 (empno NUMERIC(4,0) PRIMARY KEY, 
+                    ename VARCHAR(10), 
+                    job VARCHAR(9), 
+                    mgr NUMERIC(4,0), 
+                    hiredate DATE, 
+                    sal NUMERIC(7,2), 
+                    comm NUMERIC(7,2), 
+                    deptno NUMERIC(2,0)
+);
+
+INSERT INTO EMP2 VALUES(7369,'SMITH','CLERK',7902,'17-12-1980',800,NULL,20);
+
+INSERT INTO EMP2 VALUES(7499,'ALLEN','SALESMAN',7698,'20-2-1981',1600,300,30);
+
+INSERT INTO EMP2 VALUES(7521,'WARD','SALESMAN',7698,'22-2-1981',1250,500,30);
+
+INSERT INTO EMP2 VALUES(7566,'JONES','MANAGER',7839,'2-4-1981',2975,NULL,20);
+
+INSERT INTO EMP2 VALUES(7654,'MARTIN','SALESMAN',7698,'28-9-1981',1250,1400,30);
+
+INSERT INTO EMP2 VALUES(7698,'BLAKE','MANAGER',7839,'1-5-1981',2850,NULL,30);
+
+INSERT INTO EMP2 VALUES(7782,'CLARK','MANAGER',7839,'9-6-1981',2450,NULL,10);
+
+INSERT INTO EMP2 VALUES(7788,'SCOTT','ANALYST',7566,date '13-JUL-87'-85,3000,NULL,20);
+
+INSERT INTO EMP2 VALUES(7839,'KING','PRESIDENT',NULL,'17-11-1981',5000,NULL,10);
+
+INSERT INTO EMP2 VALUES(7844,'TURNER','SALESMAN',7698,'8-9-1981',1500,0,30);
+
+INSERT INTO EMP2 VALUES(7876,'ADAMS','CLERK',7788,date '13-JUL-87'-51,1100,NULL,20);
+
+INSERT INTO EMP2 VALUES(7900,'JAMES','CLERK',7698,'3-12-1981',950,NULL,30);
+
+INSERT INTO EMP2 VALUES(7902,'FORD','ANALYST',7566,'3-12-1981',3000,NULL,20);
+
+INSERT INTO EMP2 VALUES(7934,'MILLER','CLERK',7782,'23-1-1982',1300,NULL,10);
+
+CREATE TABLE dept (deptno NUMERIC(2,0) PRIMARY KEY, 
+                   dname VARCHAR(14), 
+                   loc VARCHAR(13)
+);
+
+INSERT INTO DEPT VALUES (10,'ACCOUNTING','NEW YORK');
+INSERT INTO DEPT VALUES (20,'RESEARCH','DALLAS');
+INSERT INTO DEPT VALUES (30,'SALES','CHICAGO');
+INSERT INTO DEPT VALUES (40,'OPERATIONS','BOSTON');
+
+CREATE TABLE  salgrade (grade NUMERIC, 
+                        losal NUMERIC, 
+                        hisal NUMERIC
+);
+
+INSERT INTO SALGRADE VALUES (1,700,1200);
+
+INSERT INTO SALGRADE VALUES (2,1201,1400);
+
+INSERT INTO SALGRADE VALUES (3,1401,2000);
+
+INSERT INTO SALGRADE VALUES (4,2001,3000);
+
+INSERT INTO SALGRADE VALUES (5,3001,9999);
+
+SELECT ename, dname 
+FROM emp2, dept 
+WHERE emp2.deptno = dept.deptno 
+ORDER BY ename;
+
+SELECT ename, loc 
+FROM emp2, dept 
+WHERE emp2.deptno = dept.deptno 
+AND loc = 'DALLAS';
+
+SELECT ename, dname, grade
+FROM emp2
+INNER JOIN dept 
+ON emp2.deptno = dept.deptno
+INNER JOIN salgrade 
+ON sal BETWEEN losal AND hisal;
+ 
+SELECT ename, sal, job
+FROM emp2, salgrade
+WHERE sal BETWEEN losal AND hisal AND grade = 3;
+
+SELECT pracownik.ename, pracownik.sal
+FROM emp2 pracownik, emp2 kierownik
+WHERE pracownik.mgr = kierownik.empno AND pracownik.sal < kierownik.sal;
+
+SELECT DISTINCT job 
+FROM emp2
+WHERE deptno IN (10, 30);
+
+SELECT AVG(sal) 
+FROM emp2;
+
+SELECT MIN(sal) 
+FROM emp2
+WHERE job = 'CLERK';
+ 
+SELECT COUNT(*)
+FROM emp2
+WHERE deptno = 20;
+
+SELECT job, AVG(sal)
+FROM emp2
+GROUP BY job;
+
+SELECT MAX(sal), job
+FROM emp2
+GROUP BY job;
+
+SELECT deptno, AVG(sal)
+FROM emp2
+GROUP BY deptno
+HAVING COUNT(*) > 3;
+
+SELECT MAX(sal)-MIN(sal) 
+FROM emp2;
+
+SELECT mgr, COUNT(*) 
+FROM emp2
+GROUP BY mgr;
+
+SELECT grade, AVG(sal)
+FROM emp2, salgrade
+GROUP BY grade;
+
+SELECT COUNT(*)
+FROM emp2, salgrade
+GROUP BY grade;
+
+SELECT * 
+FROM emp2
+WHERE sal = (SELECT MIN(sal) FROM emp2);
+
+SELECT deptno 
+FROM emp2
+WHERE job = 'CLERK';
+
+SELECT * 
+FROM emp2 a
+WHERE sal > (SELECT AVG(sal) FROM emp2 b 
+WHERE a.deptno = b.deptno);
+
+SELECT * FROM dept
+WHERE deptno NOT IN (SELECT deptno FROM emp2);

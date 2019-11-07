@@ -1,0 +1,22 @@
+Wszystkie obiekty mają należeć do schematu nazwakonta.univers
+1.Stworzyć domeny:
+- domStartUpEndNum – typ umożliwiając wprowadzanie tekstu wyłącznie zaczynającego się
+z dużej litery kończącego się liczbą lub podkreśleniem i liczbą np. Nazwa1, Nazwa_1.
+- domUrl – typ umożliwiając wprowadzanie tekstu nie zaleŜnie od wielkości liter jako odnośnika
+do strony www, tekst musi zaczynać się od http:// i kończyć na .org np. http://planeta1.org
+- domStamp – typ umożliwiający wprowadzenie tekstu w postacie 'YYYY-MM-DD LOGIN'
+gdzie login to nazwa kąta np. 2011-01-01 LOGIN
+2. Na podstawie powyższego diagramu ERD należy stworzyć tabele z uwzględnieniem
+zachodzących relacji.
+3. Stworzone domeny zastosować w tabelach:
+- domStartUpEndNum – zastosować dla wszystkich pól tekstowych dotyczących nazwy, 
+- domUrl - zastosować dla pola url w tabeli tabPlanet,
+- domStamp – zastosować dla pola discStamp w tabeli tabSystem.
+4. Stworzyć unikalny indeksy na pola NAME.
+5. Stworzyć i zastosować sekwencje seqID dla pola ID w tabeli tabMoon i tabPlanet.
+6. Stworzyć raport w postaci SELECT
+nazwakontaKolegi.univers.tabSystem.DISCSTAM,
+nazwakonta.univers.tabSystem.DISCSTAM,
+nazwakonta.univers.tabSystem.NAME
+gdzie wartość pola ID dla tabeli tabSystem w różnych schematach jest równa.
+
