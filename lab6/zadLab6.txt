@@ -1,0 +1,41 @@
+ZAD1
+Utworzyć funkcję zwracającą długość wektora o podanych współrzędnych x i y
+(parametry wejściowe i wartość zwracana są typu real)
+
+ZAD2
+Utworzyć funkcję tablicującą wartości funkcji y = A*x^2+B*x+C dla wartości A,B,C
+podanych przez użytkownika i x w zakresie od 1 do 100. Rezultat ma być zwracany
+w postaci dwukolumnowej (jako x oraz wartość funkcji dla danego x).
+
+ZAD3
+Utworzyć funkcję tablicującą wartości temperatury w skali Fahrenheita dla
+temperatur w Celsjusza w przedziale 1 do 100 co 0.1 stopnia
+
+ZAD4
+Utworzyć bezargumentową funkcję liczba_studentow zwracającą liczbę studentów
+w tabeli szkola.studenci
+
+ZAD5
+Utworzyć funkcję liczba_studentow_1 zwracającą liczbę studentów w podanej jako
+argument grupie
+
+ZAD6
+Utworzyć funkcję srednia zwracającą średnią ocen studenta o nazwisku podanym
+jako argument funkcji
+
+ZAD7
+Login studenta składa się z połączenia jego nazwiska i pierwszej litery imienia
+(wszystko małymi literami). Napisać funkcję generującą login na podstawie wiersza
+tabeli szkola.studenci.
+
+ZAD8
+Utworzyć funkcję zwracającą (jako typ złożony zdefiniowany przez użytkownika)
+nazwisko studenta oraz średnią ocen studenta którego numer indeksu przekazany
+został jako argument funkcji
+
+ZAD9
+Utworzyć funkcję zwracającą listę ocen studentów. Lista ma zawierać imię i nazwisko
+studenta, nazwę przedmiotu i
+ocenę.
+Wariant 1: Wykorzystać wcześniej zdefiniowany widok
+Wariant 2: Wykorzystać własny typ zwracanych danych
