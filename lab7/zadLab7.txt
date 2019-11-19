@@ -1,0 +1,6 @@
+//using data from lab6
+
+1. Dla bazy student – przedmiot – ocena napisać procedurę wyzwalaną, która pozwoli jedynie na
+trzykrotne zdawanie egzaminu z danego przedmiotu przez każdego studenta.
+2. Napisać procedurę aktualizującą średnią po każdym zdanym egzaminie.
+3. Napisać wyzwalacz zapisujący do tabeli logi wszystkie operacje wykonywane na tabeli ocena.
